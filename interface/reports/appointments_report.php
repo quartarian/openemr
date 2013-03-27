@@ -101,10 +101,6 @@ $form_orderby = getComparisonOrder( $_REQUEST['form_orderby'] ) ?  $_REQUEST['fo
         #report_results table {
                 margin-top: 0px;
         }
-        td.detail,
-        td.detail * {
-        	font-size:10px !important;
-	}
 }
 
 /* specifically exclude some from the screen */
@@ -125,7 +121,7 @@ $form_orderby = getComparisonOrder( $_REQUEST['form_orderby'] ) ?  $_REQUEST['fo
 
 <span class='title'><?php xl('Report','e'); ?> - <?php xl('Appointments','e'); ?></span>
 
-<div id="report_parameters_daterange"><?php echo date("d F Y", strtotime($form_from_date)) ." &nbsp; to &nbsp; ". date("d F Y", strtotime($form_to_date)); ?>
+<div id="report_parameters_daterange"><?php echo date("d F Y", strtotime($from_date)) ." &nbsp; to &nbsp; ". date("d F Y", strtotime($to_date)); ?>
 </div>
 
 <form method='post' name='theform' id='theform' action='appointments_report.php'>
