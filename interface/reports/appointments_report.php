@@ -97,6 +97,7 @@ $form_orderby = getComparisonOrder( $_REQUEST['form_orderby'] ) ?  $_REQUEST['fo
 	#report_parameters_daterange {
 		visibility: visible;
 		display: inline;
+		font-size:12px;
 	}
 	#report_results table {
 		margin-top: 0px;
