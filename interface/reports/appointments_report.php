@@ -90,17 +90,20 @@ $form_orderby = getComparisonOrder( $_REQUEST['form_orderby'] ) ?  $_REQUEST['fo
 <style type="text/css">
 /* specifically include & exclude from printing */
 @media print {
-	#report_parameters {
-		visibility: hidden;
-		display: none;
-	}
-	#report_parameters_daterange {
-		visibility: visible;
-		display: inline;
-		font-size:12px;
-	}
-	#report_results table {
-		margin-top: 0px;
+        #report_parameters {
+                visibility: hidden;
+                display: none;
+        }
+        #report_parameters_daterange {
+                visibility: visible;
+                display: inline;
+        }
+        #report_results table {
+                margin-top: 0px;
+        }
+        td.detail,
+        td.detail * {
+        	font-size:10px !important;
 	}
 }
 
